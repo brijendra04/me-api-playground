@@ -1,45 +1,81 @@
-# Node modules
+# ------------------------------
+# Node.js dependencies
+# ------------------------------
 node_modules/
-
-# Build outputs
-dist/
-build/
-out/
-
-# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 *.log
 
+# ------------------------------
+# Build outputs
+# ------------------------------
+dist/
+build/
+out/
+
+# ------------------------------
 # Environment variables
+# ------------------------------
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-# Cache
+# ------------------------------
+# Cache / Temporary files
+# ------------------------------
 .cache/
 .next/
 .vercel/
 .tmp/
 .temp/
+*.tmp
+*.swp
 
+# ------------------------------
+# Logs & Coverage
+# ------------------------------
+logs/
+*.log
+coverage/
+*.lcov
+
+# ------------------------------
 # OS files
+# ------------------------------
 .DS_Store
 Thumbs.db
 
-# IDE/editor
+# ------------------------------
+# IDE / Editor
+# ------------------------------
 .vscode/
 .idea/
-*.swp
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
 
-# Coverage reports
-coverage/
-
+# ------------------------------
 # Misc
+# ------------------------------
 *.tgz
 *.zip
 *.tar.gz
+
+# ------------------------------
+# Frontend specific
+# ------------------------------
+client/node_modules/
+client/build/
+client/.env
+
+# ------------------------------
+# Backend specific
+# ------------------------------
+server/node_modules/
+server/dist/
+server/.env
