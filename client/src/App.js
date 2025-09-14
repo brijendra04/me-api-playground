@@ -28,7 +28,7 @@ function App() {
     if (profile) {
       const fetchProjects = async () => {
         try {
-          const response = await fetch(`http://localhost:5000/profile/projects/technology?tech=${searchTerm}`);
+          const response = await fetch(`https://me-api-backend-57hv.onrender.com/profile/projects/technology?tech=${searchTerm}`);
           if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
           }
